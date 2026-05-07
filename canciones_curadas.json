@@ -1,0 +1,3422 @@
+{
+  "_meta": {
+    "nombre": "Easy Chords IA — Base de progresiones curadas",
+    "descripcion": "Progresiones simplificadas para principiantes, curadas manualmente.",
+    "version": "1.0",
+    "formato_version": "2026-05",
+    "nota_legal": "Progresiones propias simplificadas. No reproduce tablaturas ni letras de terceros.",
+    "reglas_simplificacion": {
+      "version": "1.0",
+      "fecha": "2026-05-04",
+      "descripcion": "Criterios para simplificacion de acordes en modo facil.",
+      "mantener_sin_simplificar": [
+        "A7",
+        "B7",
+        "C7",
+        "D7",
+        "E7",
+        "G7",
+        "Am",
+        "Dm",
+        "Em",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "A",
+        "B"
+      ],
+      "nota_E7": "E7 se mantiene como E7. No reemplazar por E.",
+      "simplificar_solo_si": [
+        "maj7",
+        "m7b5",
+        "dim",
+        "aug",
+        "sus4",
+        "add9",
+        "acordes con cejilla dificil",
+        "alteraciones avanzadas (#5, b9, #11, etc.)"
+      ],
+      "criterio_general": "Solo simplificar acordes que un principiante absoluto no pueda tocar en las primeras semanas. Los acordes de septima dominante (X7) son asequibles y se mantienen."
+    },
+    "acordes_permitidos_base": {
+      "mayores": [
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "A",
+        "B"
+      ],
+      "menores": [
+        "Am",
+        "Bm",
+        "Cm",
+        "Dm",
+        "Em",
+        "Fm",
+        "Gm"
+      ],
+      "septimas_dominantes": [
+        "A7",
+        "B7",
+        "C7",
+        "D7",
+        "E7",
+        "F7",
+        "G7"
+      ],
+      "septimas_mayores_usar_con_criterio": [
+        "Cmaj7",
+        "Dmaj7",
+        "Emaj7",
+        "Fmaj7",
+        "Gmaj7",
+        "Amaj7"
+      ],
+      "menores_importantes_no_simplificar": [
+        "F#m",
+        "C#m",
+        "G#m",
+        "Bm",
+        "Em"
+      ],
+      "menores_septima_tocables": [
+        "Am7",
+        "Dm7",
+        "Em7",
+        "Bm7"
+      ],
+      "suspensiones": [
+        "Asus2",
+        "Asus4",
+        "Dsus2",
+        "Dsus4",
+        "D4",
+        "Esus4"
+      ],
+      "power_chords": [
+        "E5",
+        "G5",
+        "A5",
+        "D5"
+      ],
+      "slash_chords_simples": [
+        "C/G",
+        "D/F#",
+        "G/B"
+      ],
+      "acordes_con_bajo_facil": [
+        "F/C",
+        "Am/G"
+      ],
+      "acordes_de_paso_comunes": [
+        "Aadd9",
+        "Dadd9"
+      ],
+      "simplificar_si_aparecen": [
+        "dim",
+        "aug",
+        "m7b5",
+        "cejilla_compleja",
+        "tensiones_avanzadas"
+      ]
+    }
+  },
+  "_formato_referencia": {
+    "_comentario": "Este bloque es solo documentacion del formato. NO es una cancion real.",
+    "id": "string — identificador unico, ej: divididos_como_un_cuento",
+    "artista": "string — nombre del artista tal como lo devuelve AcoustID",
+    "titulo": "string — titulo tal como lo devuelve AcoustID",
+    "estado": "pending_review | verified",
+    "tonalidad": "string — ej: A major, B minor",
+    "capo": "number | null — traste del capo, null si no tiene",
+    "bpm_referencia": "number | null — BPM aproximado",
+    "genero": "string — ej: rock_argentino, pop_latino, rock_clasico",
+    "notas_curaduria": "string — observaciones internas del curador",
+    "fecha_carga": "string — YYYY-MM-DD",
+    "secciones": [
+      {
+        "nombre": "string — intro | verso | estribillo | puente | solo | outro",
+        "acordes_bloque": [
+          "string — acordes del bloque en orden"
+        ],
+        "pattern_reuse": "string | null — nombre de seccion que repite, null si es original",
+        "notas": "string | null — observaciones de la seccion",
+        "lineas": [
+          {
+            "texto_referencia": "string — primeras palabras de la linea, NO letra completa",
+            "acorde": "string — acorde en esa linea"
+          }
+        ]
+      }
+    ]
+  },
+  "_ejemplo_no_incluido": {
+    "_comentario": "Solo referencia visual. NO esta en la lista de canciones.",
+    "id": "los_piojos_vine_hasta_aqui",
+    "artista": "Los Piojos",
+    "titulo": "Vine hasta aquí",
+    "estado": "verified",
+    "tonalidad": "B minor",
+    "capo": null,
+    "bpm_referencia": 129,
+    "genero": "rock_argentino",
+    "notas_curaduria": "Progresion Bm-G-D-A verificada.",
+    "fecha_carga": "2026-05-04",
+    "secciones": [
+      {
+        "nombre": "verso",
+        "acordes_bloque": [
+          "Bm",
+          "G",
+          "Bm",
+          "G"
+        ],
+        "pattern_reuse": null,
+        "notas": null,
+        "lineas": [
+          {
+            "texto_referencia": "Vine hasta aquí...",
+            "acorde": "Bm"
+          },
+          {
+            "texto_referencia": "Para poder abrazarte...",
+            "acorde": "G"
+          }
+        ]
+      }
+    ]
+  },
+  "canciones": [
+    {
+      "id": "la_vela_puerca_el_profeta",
+      "artista": "La Vela Puerca",
+      "titulo": "El Profeta",
+      "estado": "pending_review",
+      "tonalidad": "C major",
+      "capo": null,
+      "bpm_referencia": null,
+      "genero": "rock_uruguayo",
+      "notas_curaduria": "Progresion dominante C-F-G-C en versos. Puente sobre Am-G-C. Cierre estribillo con F-G-C repetido. Solo instrumental sobre C-C-F-G-C.",
+      "fecha_carga": "2026-05-04",
+      "secciones": [
+        {
+          "nombre": "verso_1",
+          "acordes_bloque": [
+            "C",
+            "F",
+            "G",
+            "C"
+          ],
+          "pattern_reuse": null,
+          "notas": null,
+          "lineas": [
+            {
+              "texto_referencia": "Es una historia sin...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "De esas que ves...",
+              "acorde": "F"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "Lo único raro fue...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "Lo que podía venir...",
+              "acorde": "F"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            }
+          ]
+        },
+        {
+          "nombre": "puente_1",
+          "acordes_bloque": [
+            "Am",
+            "G",
+            "C",
+            "F",
+            "G",
+            "C"
+          ],
+          "pattern_reuse": null,
+          "notas": null,
+          "lineas": [
+            {
+              "texto_referencia": "Se fue de militante...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "Pensó que ser un héroe...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "Peleó con uñas...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "Pero nunca pudo...",
+              "acorde": "F"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            }
+          ]
+        },
+        {
+          "nombre": "verso_2",
+          "acordes_bloque": [
+            "C",
+            "F",
+            "G",
+            "C"
+          ],
+          "pattern_reuse": "verso_1",
+          "notas": null,
+          "lineas": [
+            {
+              "texto_referencia": "Ya no bastaba con...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "Ahora había que seguir...",
+              "acorde": "F"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "Poner cabeza y aguantar...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "Y con la vida es así...",
+              "acorde": "F"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            }
+          ]
+        },
+        {
+          "nombre": "estribillo_1",
+          "acordes_bloque": [
+            "Am",
+            "G",
+            "C",
+            "F",
+            "G",
+            "C"
+          ],
+          "pattern_reuse": null,
+          "notas": null,
+          "lineas": [
+            {
+              "texto_referencia": "Hablaba de lo bueno...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "Tener fe y no tener...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "Dejaba alguna mente...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "Solo pa sentirse mejor...",
+              "acorde": "F"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            }
+          ]
+        },
+        {
+          "nombre": "estribillo_2",
+          "acordes_bloque": [
+            "Am",
+            "G",
+            "C",
+            "F",
+            "G",
+            "C"
+          ],
+          "pattern_reuse": "estribillo_1",
+          "notas": "Repeticion exacta del estribillo_1",
+          "lineas": []
+        },
+        {
+          "nombre": "solo_instrumental",
+          "acordes_bloque": [
+            "C",
+            "C",
+            "F",
+            "G",
+            "C"
+          ],
+          "pattern_reuse": null,
+          "notas": "Solo de armonica y vientos. Sin letra. Base instrumental.",
+          "lineas": []
+        },
+        {
+          "nombre": "puente_2",
+          "acordes_bloque": [
+            "Am",
+            "G",
+            "C",
+            "F",
+            "G",
+            "C"
+          ],
+          "pattern_reuse": "puente_1",
+          "notas": "Repeticion del puente_1",
+          "lineas": []
+        },
+        {
+          "nombre": "verso_3",
+          "acordes_bloque": [
+            "C",
+            "F",
+            "G",
+            "C"
+          ],
+          "pattern_reuse": "verso_1",
+          "notas": null,
+          "lineas": [
+            {
+              "texto_referencia": "Pero a este tipo le gustaba...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "Y mucha gente le habló...",
+              "acorde": "F"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "Muchas historias tuvo...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "Para explicar su razón...",
+              "acorde": "F"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            }
+          ]
+        },
+        {
+          "nombre": "estribillo_final",
+          "acordes_bloque": [
+            "Am",
+            "G",
+            "C",
+            "F",
+            "G",
+            "C"
+          ],
+          "pattern_reuse": null,
+          "notas": "Cierre con F-G-C repetido 3 veces. Ultima linea termina en G sin resolver a C.",
+          "lineas": [
+            {
+              "texto_referencia": "Hay que tomarse un tiempo...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "Que solamente sos lo que sos...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "De ahi a todo lo que tu...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "Eso ya depende de vos (1)",
+              "acorde": "F"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "Eso ya depende de vos (2)",
+              "acorde": "F"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "Eso ya depende de vos (3)",
+              "acorde": "F"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "Eso ya depende de VOS (cierre)",
+              "acorde": "F"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "andres_calamaro_flaca",
+      "artista": "Andres Calamaro",
+      "titulo": "Flaca",
+      "estado": "pending_review",
+      "tonalidad": "G major",
+      "capo": null,
+      "bpm_referencia": null,
+      "genero": "rock_argentino",
+      "notas_curaduria": "Progresion base G-B7-Em-C-G-D repetida en todos los versos. B7 es acorde exacto del material, no simplificado.",
+      "fecha_carga": "2026-05-04",
+      "secciones": [
+        {
+          "nombre": "verso_1",
+          "acordes_bloque": [
+            "G",
+            "B7",
+            "Em",
+            "C",
+            "G",
+            "D",
+            "G",
+            "D"
+          ],
+          "pattern_reuse": null,
+          "notas": null,
+          "lineas": [
+            {
+              "texto_referencia": "Flaca, no me claves...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "B7"
+            },
+            {
+              "texto_referencia": "tus puñales, por la espalda...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "tan profundo, no me duelen...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "no me hacen mal...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            }
+          ]
+        },
+        {
+          "nombre": "verso_2",
+          "acordes_bloque": [
+            "G",
+            "B7",
+            "Em",
+            "C",
+            "G",
+            "D",
+            "G",
+            "D"
+          ],
+          "pattern_reuse": "verso_1",
+          "notas": null,
+          "lineas": [
+            {
+              "texto_referencia": "Lejos, en el centro...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "B7"
+            },
+            {
+              "texto_referencia": "de la tierra, las raices...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "del amor, donde estaban...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "quedaran...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            }
+          ]
+        },
+        {
+          "nombre": "verso_3",
+          "acordes_bloque": [
+            "G",
+            "B7",
+            "Em",
+            "C",
+            "G",
+            "D",
+            "G",
+            "D"
+          ],
+          "pattern_reuse": "verso_1",
+          "notas": null,
+          "lineas": [
+            {
+              "texto_referencia": "Entre no me olvides...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "B7"
+            },
+            {
+              "texto_referencia": "olvidados, en el fondo...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "en el cuarto de invitados...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "un pasado mejor...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            }
+          ]
+        },
+        {
+          "nombre": "verso_4",
+          "acordes_bloque": [
+            "G",
+            "B7",
+            "Em",
+            "C",
+            "G",
+            "D",
+            "G",
+            "D"
+          ],
+          "pattern_reuse": "verso_1",
+          "notas": null,
+          "lineas": [
+            {
+              "texto_referencia": "Aunque casi me equivoco...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "B7"
+            },
+            {
+              "texto_referencia": "no me mientas, no me digas...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "no te quedes callada...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "ni me pidas perdon...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            }
+          ]
+        },
+        {
+          "nombre": "verso_5",
+          "acordes_bloque": [
+            "G",
+            "B7",
+            "Em",
+            "C",
+            "G",
+            "D",
+            "G",
+            "D"
+          ],
+          "pattern_reuse": "verso_1",
+          "notas": null,
+          "lineas": [
+            {
+              "texto_referencia": "Aunque casi te confieso...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "B7"
+            },
+            {
+              "texto_referencia": "perro companero, un perro ideal...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "que aprendio a ladrar...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "para poder comer...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "soda_stereo_de_musica_ligera",
+      "artista": "Soda Stereo",
+      "titulo": "De Música Ligera",
+      "estado": "pending_review",
+      "tonalidad": "B minor",
+      "capo": null,
+      "bpm_referencia": null,
+      "genero": "rock_argentino",
+      "notas_curaduria": "Progresion unica Bm-G-D-A a lo largo de toda la cancion. Intro, verso y estribillo usan el mismo patron armonico. Cierre con repeticion de Nada mas queda sobre Bm-G-D-A.",
+      "fecha_carga": "2026-05-04",
+      "secciones": [
+        {
+          "nombre": "intro",
+          "acordes_bloque": [
+            "Bm",
+            "G",
+            "D",
+            "A"
+          ],
+          "pattern_reuse": null,
+          "notas": "Dos vueltas de Bm-G-D-A instrumentales.",
+          "lineas": []
+        },
+        {
+          "nombre": "verso_1",
+          "acordes_bloque": [
+            "Bm",
+            "G",
+            "D",
+            "A"
+          ],
+          "pattern_reuse": null,
+          "notas": null,
+          "lineas": [
+            {
+              "texto_referencia": "Ella durmio...",
+              "acorde": "Bm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "A"
+            },
+            {
+              "texto_referencia": "Y yo desperte...",
+              "acorde": "Bm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "A"
+            },
+            {
+              "texto_referencia": "Algun tiempo atras...",
+              "acorde": "Bm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "A"
+            },
+            {
+              "texto_referencia": "Y nunca sortie...",
+              "acorde": "Bm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "A"
+            }
+          ]
+        },
+        {
+          "nombre": "estribillo_1",
+          "acordes_bloque": [
+            "Bm",
+            "G",
+            "D",
+            "A"
+          ],
+          "pattern_reuse": null,
+          "notas": null,
+          "lineas": [
+            {
+              "texto_referencia": "De aquel amor...",
+              "acorde": "Bm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "A"
+            },
+            {
+              "texto_referencia": "Nada nos libra...",
+              "acorde": "Bm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "A"
+            },
+            {
+              "texto_referencia": "No le enviare...",
+              "acorde": "Bm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "A"
+            },
+            {
+              "texto_referencia": "Ni pienso evitar...",
+              "acorde": "Bm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "A"
+            }
+          ]
+        },
+        {
+          "nombre": "estribillo_2",
+          "acordes_bloque": [
+            "Bm",
+            "G",
+            "D",
+            "A"
+          ],
+          "pattern_reuse": "estribillo_1",
+          "notas": "Repite solo las dos primeras lineas del estribillo_1 (De aquel amor / Nada nos libra).",
+          "lineas": []
+        },
+        {
+          "nombre": "estribillo_3",
+          "acordes_bloque": [
+            "Bm",
+            "G",
+            "D",
+            "A"
+          ],
+          "pattern_reuse": "estribillo_1",
+          "notas": "Tercera repeticion. Agrega nada mas al final de Nada nos libra. Misma progresion.",
+          "lineas": [
+            {
+              "texto_referencia": "De aquel amor...",
+              "acorde": "Bm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "A"
+            },
+            {
+              "texto_referencia": "Nada nos libra... nada mas",
+              "acorde": "Bm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "A"
+            }
+          ]
+        },
+        {
+          "nombre": "outro",
+          "acordes_bloque": [
+            "Bm",
+            "G",
+            "D",
+            "A"
+          ],
+          "pattern_reuse": null,
+          "notas": "Arranca con vuelta instrumental Bm-G-D-A. La voz entra en A con nada mas queda repetido. Ultima vuelta termina en Bm.",
+          "lineas": [
+            {
+              "texto_referencia": "(instrumental)...",
+              "acorde": "Bm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "nada mas queda (1)...",
+              "acorde": "A"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Bm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "nada mas queda (2)...",
+              "acorde": "A"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Bm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "nada mas queda (3)...",
+              "acorde": "A"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Bm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "nada mas queda (cierre)...",
+              "acorde": "A"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Bm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "los_fabulosos_cadillacs_demasiada_presion",
+      "artista": "Los Fabulosos Cadillacs",
+      "titulo": "Demasiada Presion",
+      "estado": "pending_review",
+      "tonalidad": "A minor",
+      "capo": null,
+      "bpm_referencia": null,
+      "genero": "rock_argentino",
+      "notas_curaduria": "Progresion principal Am-Dm-E7. Puente sobre Dm-C-B7-E7. Estribillo Am-Dm-E7-Am. B7 aparece en el material como SI7, se mantiene B7. REm en material equivale a Dm, se unifica como Dm.",
+      "fecha_carga": "2026-05-04",
+      "secciones": [
+        {
+          "nombre": "verso_1",
+          "acordes_bloque": [
+            "Am",
+            "Dm",
+            "E7",
+            "Am"
+          ],
+          "pattern_reuse": null,
+          "notas": null,
+          "lineas": [
+            {
+              "texto_referencia": "Tomaste el vaso aquel...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "aquel que no debes tomar...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "saliste a caminar...",
+              "acorde": "E7"
+            },
+            {
+              "texto_referencia": "y decidiste ir la a buscar...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "mil veces y una mas...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "juraste no volverla a ver...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "la fiesta termino...",
+              "acorde": "E7"
+            },
+            {
+              "texto_referencia": "ya no podes tenerte en pie...",
+              "acorde": "Am"
+            }
+          ]
+        },
+        {
+          "nombre": "puente_1",
+          "acordes_bloque": [
+            "Dm",
+            "C",
+            "B7",
+            "E7"
+          ],
+          "pattern_reuse": null,
+          "notas": "B7 aparece en el material como SI7. Se unifica como B7.",
+          "lineas": [
+            {
+              "texto_referencia": "Esta noche es hora de...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "el tiempo pasa pronto...",
+              "acorde": "B7"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "E7"
+            },
+            {
+              "texto_referencia": "pasa, pasa, pasa...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "volvamos caminando...",
+              "acorde": "B7"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "E7"
+            }
+          ]
+        },
+        {
+          "nombre": "estribillo_1",
+          "acordes_bloque": [
+            "Am",
+            "Dm",
+            "E7",
+            "Am"
+          ],
+          "pattern_reuse": null,
+          "notas": null,
+          "lineas": [
+            {
+              "texto_referencia": "Noche de calor en la ciudad...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "ella te dejo y todo sigue igual...",
+              "acorde": "E7"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Am"
+            }
+          ]
+        },
+        {
+          "nombre": "verso_2",
+          "acordes_bloque": [
+            "Am",
+            "Dm",
+            "E7",
+            "Am"
+          ],
+          "pattern_reuse": "verso_1",
+          "notas": null,
+          "lineas": [
+            {
+              "texto_referencia": "Mil veces y una mas...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "Juraste que vas a crecer...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "y solo una vez mas...",
+              "acorde": "E7"
+            },
+            {
+              "texto_referencia": "Creciste hasta morir sin ver...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "la fiesta termino...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "no te pudiste controlar...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "mil golpes y uno mas...",
+              "acorde": "E7"
+            },
+            {
+              "texto_referencia": "la noche te volvio a pegar...",
+              "acorde": "Am"
+            }
+          ]
+        },
+        {
+          "nombre": "puente_2",
+          "acordes_bloque": [
+            "Dm",
+            "C",
+            "B7",
+            "E7"
+          ],
+          "pattern_reuse": "puente_1",
+          "notas": "Repeticion del puente_1. En el material aparece REm = Dm y SI7 = B7.",
+          "lineas": []
+        },
+        {
+          "nombre": "estribillo_2",
+          "acordes_bloque": [
+            "Am",
+            "Dm",
+            "E7",
+            "Am"
+          ],
+          "pattern_reuse": "estribillo_1",
+          "notas": null,
+          "lineas": []
+        },
+        {
+          "nombre": "estribillo_final",
+          "acordes_bloque": [
+            "Am",
+            "Dm",
+            "E7",
+            "Am"
+          ],
+          "pattern_reuse": null,
+          "notas": "Agrega una tercera linea: Quisiera volver el tiempo atras / Pero lo que vuelve es esta noche nada mas.",
+          "lineas": [
+            {
+              "texto_referencia": "Noche de calor en la ciudad...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "Ella te dejo y todo sigue igual...",
+              "acorde": "E7"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "Quisiera volver el tiempo atras...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "Pero lo que vuelve es esta noche nada mas...",
+              "acorde": "E7"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Am"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "la_vela_puerca_zafar",
+      "artista": "La Vela Puerca",
+      "titulo": "Zafar",
+      "estado": "pending_review",
+      "tonalidad": "A minor",
+      "capo": null,
+      "bpm_referencia": null,
+      "genero": "rock_uruguayo",
+      "notas_curaduria": "Progresion unica Am-Dm-G en toda la cancion. Verso y estribillo usan la misma base armonica. Cambio de ritmo a ska marcado en el material pero sin cambio de acordes.",
+      "fecha_carga": "2026-05-05",
+      "secciones": [
+        {
+          "nombre": "verso_1",
+          "acordes_bloque": [
+            "Am",
+            "Dm",
+            "G"
+          ],
+          "pattern_reuse": null,
+          "notas": null,
+          "lineas": [
+            {
+              "texto_referencia": "Soy de la ciudad con todo...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "con su ruido, con su gente...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "Y no puedo evitar...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "pero igual sigo creciendo...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "No voy a imaginar...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "compro aire y si es puro...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "No voy a tolerar...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "que se bajen los brazos...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            }
+          ]
+        },
+        {
+          "nombre": "estribillo_1",
+          "acordes_bloque": [
+            "Am",
+            "Dm",
+            "G"
+          ],
+          "pattern_reuse": null,
+          "notas": null,
+          "lineas": [
+            {
+              "texto_referencia": "Me voy, volando por ahi...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "y estoy, convencido de ir...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "me voy, silbando y sin rencor...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "y estoy, zafando del olor...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            }
+          ]
+        },
+        {
+          "nombre": "verso_2",
+          "acordes_bloque": [
+            "Am",
+            "Dm",
+            "G"
+          ],
+          "pattern_reuse": "verso_1",
+          "notas": "Ritmo ska desde aca segun el material. Sin cambio de acordes.",
+          "lineas": [
+            {
+              "texto_referencia": "Me encontre con la gente...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "que de turista en la capital...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "y no ha encarado al fin...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "de respirar hollin...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "y empiezo a envejecer...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "criado pa toser...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "y a donde ir a parar...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "deberiamos andar desnudos...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            }
+          ]
+        },
+        {
+          "nombre": "estribillo_2",
+          "acordes_bloque": [
+            "Am",
+            "Dm",
+            "G"
+          ],
+          "pattern_reuse": "estribillo_1",
+          "notas": null,
+          "lineas": []
+        },
+        {
+          "nombre": "verso_3",
+          "acordes_bloque": [
+            "Am",
+            "Dm",
+            "G"
+          ],
+          "pattern_reuse": "verso_1",
+          "notas": "Repeticion del verso_1 completo.",
+          "lineas": []
+        },
+        {
+          "nombre": "estribillo_3",
+          "acordes_bloque": [
+            "Am",
+            "Dm",
+            "G"
+          ],
+          "pattern_reuse": "estribillo_1",
+          "notas": null,
+          "lineas": []
+        }
+      ]
+    },
+    {
+      "id": "la_renga_veneno",
+      "artista": "La Renga",
+      "titulo": "Veneno",
+      "estado": "pending_review",
+      "tonalidad": "C major / A minor",
+      "capo": null,
+      "bpm_referencia": null,
+      "genero": "rock_argentino",
+      "notas_curaduria": "Versos sobre C-Am-A7. Estribillos sobre Dm-Am-E-G. A7 se mantiene segun regla de simplificacion. E se mantiene como E (no Em). Intro y puente instrumental incluidos.",
+      "fecha_carga": "2026-05-05",
+      "secciones": [
+        {
+          "nombre": "intro",
+          "acordes_bloque": [
+            "C",
+            "Am",
+            "C",
+            "Am",
+            "A7"
+          ],
+          "pattern_reuse": null,
+          "notas": "Dos vueltas de C-Am-C-Am-A7 instrumentales.",
+          "lineas": []
+        },
+        {
+          "nombre": "verso_1",
+          "acordes_bloque": [
+            "C",
+            "Am",
+            "A7"
+          ],
+          "pattern_reuse": null,
+          "notas": null,
+          "lineas": [
+            {
+              "texto_referencia": "En un rincon de las sierras...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "donde arden las estrellas...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "A7"
+            },
+            {
+              "texto_referencia": "deje mi herida abierta...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "en un valle de pena...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "A7"
+            }
+          ]
+        },
+        {
+          "nombre": "estribillo_1",
+          "acordes_bloque": [
+            "Dm",
+            "Am",
+            "Dm",
+            "E",
+            "G"
+          ],
+          "pattern_reuse": null,
+          "notas": "E se mantiene como E segun material. No es Em.",
+          "lineas": [
+            {
+              "texto_referencia": "Casi sin darte cuenta...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "se te puede enfermar el corazon...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "Cuando uno menos lo espera...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "el veneno...",
+              "acorde": "E"
+            },
+            {
+              "texto_referencia": "ya esta en tus venas...",
+              "acorde": "G"
+            }
+          ]
+        },
+        {
+          "nombre": "verso_2",
+          "acordes_bloque": [
+            "C",
+            "Am",
+            "A7"
+          ],
+          "pattern_reuse": "verso_1",
+          "notas": null,
+          "lineas": [
+            {
+              "texto_referencia": "En un rio de deshielo...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "al sol de una manana...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "A7"
+            },
+            {
+              "texto_referencia": "trajeron en un cuerpo...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "a un angel de montana...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "A7"
+            }
+          ]
+        },
+        {
+          "nombre": "estribillo_2",
+          "acordes_bloque": [
+            "Dm",
+            "Am",
+            "Dm",
+            "E",
+            "G"
+          ],
+          "pattern_reuse": null,
+          "notas": "Letra diferente al estribillo_1 aunque misma progresion.",
+          "lineas": [
+            {
+              "texto_referencia": "Un par de ojos negros...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "te pueden robar la ilusion...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "Y no hay cura ni remedio...",
+              "acorde": "Dm"
+            },
+            {
+              "texto_referencia": "que te hagan...",
+              "acorde": "E"
+            },
+            {
+              "texto_referencia": "ver mejor...",
+              "acorde": "G"
+            }
+          ]
+        },
+        {
+          "nombre": "puente_instrumental",
+          "acordes_bloque": [
+            "C",
+            "Am",
+            "A7",
+            "Dm",
+            "E",
+            "G"
+          ],
+          "pattern_reuse": null,
+          "notas": "Seccion instrumental. C-Am-C-Am-A7 dos vueltas, luego Dm-Am-Dm-E-G, luego vuelta a C-Am.",
+          "lineas": []
+        },
+        {
+          "nombre": "verso_3",
+          "acordes_bloque": [
+            "C",
+            "Am",
+            "A7"
+          ],
+          "pattern_reuse": "verso_1",
+          "notas": null,
+          "lineas": [
+            {
+              "texto_referencia": "La luna y mi suerte...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "rompieron el encanto...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "A7"
+            },
+            {
+              "texto_referencia": "perdi mi sueno en la noche...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "que el angel se hizo diablo...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "A7"
+            }
+          ]
+        },
+        {
+          "nombre": "estribillo_3",
+          "acordes_bloque": [
+            "Dm",
+            "Am",
+            "Dm",
+            "E",
+            "G"
+          ],
+          "pattern_reuse": "estribillo_2",
+          "notas": null,
+          "lineas": []
+        },
+        {
+          "nombre": "verso_4",
+          "acordes_bloque": [
+            "C",
+            "Am",
+            "A7"
+          ],
+          "pattern_reuse": "verso_1",
+          "notas": null,
+          "lineas": [
+            {
+              "texto_referencia": "En un rincon de las sierras... (repeticion)",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "donde arden las estrellas...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "A7"
+            },
+            {
+              "texto_referencia": "deje mi herida abierta...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "en un valle de pena...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "A7"
+            }
+          ]
+        },
+        {
+          "nombre": "estribillo_4",
+          "acordes_bloque": [
+            "Dm",
+            "Am",
+            "Dm",
+            "E",
+            "G"
+          ],
+          "pattern_reuse": "estribillo_1",
+          "notas": null,
+          "lineas": []
+        },
+        {
+          "nombre": "outro",
+          "acordes_bloque": [
+            "C",
+            "Am"
+          ],
+          "pattern_reuse": null,
+          "notas": "Cierre vocal con LA LA lala. Solo C y Am.",
+          "lineas": [
+            {
+              "texto_referencia": "LA LA lala lala...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "lala lala la lala...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "LA LA lala lala...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "lala lala la oh ohhhhhhh...",
+              "acorde": "Am"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "la_renga_balada_del_diablo_y_la_muerte",
+      "artista": "La Renga",
+      "titulo": "Balada del Diablo y la Muerte",
+      "estado": "pending_review",
+      "tonalidad": "E minor",
+      "capo": null,
+      "bpm_referencia": null,
+      "genero": "rock_argentino",
+      "notas_curaduria": "Material en notacion espanola: MIm=Em, SOL=G, RE=D, LA7=A7, SI=B, LA=A, DO=C. Versos sobre Em-G-D-A7. Estribillo sobre A-C-G-D. Seccion prosa sin acordes marcados requiere_revision.",
+      "fecha_carga": "2026-05-05",
+      "secciones": [
+        {
+          "nombre": "intro",
+          "acordes_bloque": [
+            "Em",
+            "G",
+            "D",
+            "A7"
+          ],
+          "pattern_reuse": null,
+          "notas": "Cuatro vueltas de Em-G-D-A7 instrumentales.",
+          "lineas": []
+        },
+        {
+          "nombre": "verso_1",
+          "acordes_bloque": [
+            "Em",
+            "G",
+            "D",
+            "A7"
+          ],
+          "pattern_reuse": null,
+          "notas": null,
+          "lineas": [
+            {
+              "texto_referencia": "Estaba el diablo mal parado...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "en la esquina de mi barrio...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "A7"
+            },
+            {
+              "texto_referencia": "Ahi donde dobla el viento...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "y se cruzan los atajos...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "A7"
+            },
+            {
+              "texto_referencia": "Al lado de el estaba la muerte...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "con una botella en la mano...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "A7"
+            },
+            {
+              "texto_referencia": "me miraba de reojo...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "y se reian por lo bajo...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "A7"
+            }
+          ]
+        },
+        {
+          "nombre": "verso_2",
+          "acordes_bloque": [
+            "Em",
+            "G",
+            "D",
+            "A7",
+            "B"
+          ],
+          "pattern_reuse": "verso_1",
+          "notas": "Termina en B (SI) antes del estribillo.",
+          "lineas": [
+            {
+              "texto_referencia": "Y yo que esperaba no se a quien...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "al otro lado de la calle del otono...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "A7"
+            },
+            {
+              "texto_referencia": "una noche de bufanda...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "que me encontro desvelado...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "A7"
+            },
+            {
+              "texto_referencia": "entre dientes, oi a la muerte...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "que decia, que decia asi...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "A7"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "B"
+            }
+          ]
+        },
+        {
+          "nombre": "estribillo_1",
+          "acordes_bloque": [
+            "A",
+            "C",
+            "G",
+            "D"
+          ],
+          "pattern_reuse": null,
+          "notas": "Cambio de centro tonal. LA=A, DO=C, SOL=G, RE=D.",
+          "lineas": [
+            {
+              "texto_referencia": "Cuantas veces se abra escapado...",
+              "acorde": "A"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "como laucha por tirante...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "y esta noche que no cuesta nada...",
+              "acorde": "A"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "ni siquiera fatigarme...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "podemos llevarnos un cordero...",
+              "acorde": "A"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "con solo cruzar la calle...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "A"
+            }
+          ]
+        },
+        {
+          "nombre": "puente_prosa",
+          "acordes_bloque": [
+            "Em",
+            "G",
+            "D",
+            "A7"
+          ],
+          "pattern_reuse": null,
+          "requiere_revision": true,
+          "notas": "Seccion narrativa sin acordes marcados en el material. Se asume continuacion sobre Em-G-D-A7.",
+          "lineas": [
+            {
+              "texto_referencia": "Yo me escondí tras la niebla...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "y mire al infinito...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "a ver si llegaba ese...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "que nunca iba a venir...",
+              "acorde": "A7"
+            },
+            {
+              "texto_referencia": "Estaba el diablo mal parado... (rep)",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "en la esquina de mi barrio...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "al lado de el estaba la muerte...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "con una botella en la mano...",
+              "acorde": "A7"
+            }
+          ]
+        },
+        {
+          "nombre": "solo_instrumental",
+          "acordes_bloque": [
+            "Em",
+            "G",
+            "D",
+            "A7"
+          ],
+          "pattern_reuse": "intro",
+          "notas": "Solo marcado en el material sobre Em-G-D-A7.",
+          "lineas": []
+        },
+        {
+          "nombre": "verso_3",
+          "acordes_bloque": [
+            "Em",
+            "G",
+            "D",
+            "A7"
+          ],
+          "pattern_reuse": "verso_1",
+          "notas": null,
+          "lineas": [
+            {
+              "texto_referencia": "Y temblando como una hoja...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "me cruce para encarlarlos...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "y le dije, me parece que esta vez...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "me dejaron bien plantado...",
+              "acorde": "A7"
+            },
+            {
+              "texto_referencia": "Les pedi fuego y del bolsillo...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "saque una rama pa convidarlos...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "Y bajo un arbol del otono...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "nos quedamos chamullando...",
+              "acorde": "A7"
+            }
+          ]
+        },
+        {
+          "nombre": "verso_4",
+          "acordes_bloque": [
+            "Em",
+            "G",
+            "D",
+            "A7",
+            "B"
+          ],
+          "pattern_reuse": "verso_1",
+          "notas": "Termina en B antes del estribillo final.",
+          "lineas": [
+            {
+              "texto_referencia": "Me contaron de sus vidas...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "sus triunfos y sus fracasos...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "de que el mundo estaba loco...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "y hasta el cielo fue comprado...",
+              "acorde": "A7"
+            },
+            {
+              "texto_referencia": "y mas miedo que ellos dos...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "me daba el propio ser humano...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "A7"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "B"
+            }
+          ]
+        },
+        {
+          "nombre": "estribillo_2",
+          "acordes_bloque": [
+            "A",
+            "C",
+            "G",
+            "D"
+          ],
+          "pattern_reuse": null,
+          "notas": "Letra diferente al estribillo_1. Misma progresion A-C-G-D.",
+          "lineas": [
+            {
+              "texto_referencia": "y yo ya no esperaba a nadie...",
+              "acorde": "A"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "y entre las risas del aquelarre...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "el diablo y la muerte...",
+              "acorde": "A"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "se me fueron amigando...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "Ahi donde dobla el viento...",
+              "acorde": "A"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "y se cruzan los atajos...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "Ahi donde brinda la vida...",
+              "acorde": "A"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "en la esquina de mi barrio...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "los_piojos_tan_solo",
+      "artista": "Los Piojos",
+      "titulo": "Tan Solo",
+      "estado": "pending_review",
+      "tonalidad": "G major",
+      "capo": null,
+      "bpm_referencia": null,
+      "genero": "rock_argentino",
+      "notas_curaduria": "Progresion unica G-F-C-G en toda la cancion. Verso y estribillo usan la misma base armonica. Estribillo muy corto con Oh! Oh! Tan solo. Cierre con imagen de la cuerda sin acorde final explicito.",
+      "fecha_carga": "2026-05-05",
+      "secciones": [
+        {
+          "nombre": "verso_1",
+          "acordes_bloque": [
+            "G",
+            "F",
+            "C",
+            "G"
+          ],
+          "pattern_reuse": null,
+          "notas": null,
+          "lineas": [
+            {
+              "texto_referencia": "Quiza no sea el vino...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "Quiza no sea el postre...",
+              "acorde": "F"
+            },
+            {
+              "texto_referencia": "Quiza no sea...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "No sea nada...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "Pero hay tanta belleza...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "Tirada en la mesa...",
+              "acorde": "F"
+            },
+            {
+              "texto_referencia": "Desnuda toda rebalsada...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            }
+          ]
+        },
+        {
+          "nombre": "verso_2",
+          "acordes_bloque": [
+            "G",
+            "F",
+            "C",
+            "G"
+          ],
+          "pattern_reuse": "verso_1",
+          "notas": null,
+          "lineas": [
+            {
+              "texto_referencia": "Apuras el vaso...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "Vas perdiendo el paso...",
+              "acorde": "F"
+            },
+            {
+              "texto_referencia": "Y en la mesa ya no hay nada...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "Borracha esta la puerta...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "Cerraste y quedo abierta...",
+              "acorde": "F"
+            },
+            {
+              "texto_referencia": "Y puedo escuchar tu llamada...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            }
+          ]
+        },
+        {
+          "nombre": "estribillo_1",
+          "acordes_bloque": [
+            "G",
+            "F",
+            "C",
+            "G"
+          ],
+          "pattern_reuse": null,
+          "notas": "Estribillo corto. Dos vueltas de Oh! Oh! Tan solo sobre G-F-C-G.",
+          "lineas": [
+            {
+              "texto_referencia": "Oh! Oh! Tan solo...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "F"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "Oh! Oh! Tan solo... (rep)",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "F"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            }
+          ]
+        },
+        {
+          "nombre": "verso_3",
+          "acordes_bloque": [
+            "G",
+            "F",
+            "C",
+            "G"
+          ],
+          "pattern_reuse": "verso_1",
+          "notas": null,
+          "lineas": [
+            {
+              "texto_referencia": "Servida ya tu boca...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "Tan dulce esta tu boca...",
+              "acorde": "F"
+            },
+            {
+              "texto_referencia": "Tan dulce como un blues amargo...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "Un vaso rueda al piso...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "Lento cae al piso...",
+              "acorde": "F"
+            },
+            {
+              "texto_referencia": "Lento y muere en mil pedazos...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            }
+          ]
+        },
+        {
+          "nombre": "verso_4",
+          "acordes_bloque": [
+            "G",
+            "F",
+            "C",
+            "G"
+          ],
+          "pattern_reuse": "verso_1",
+          "notas": null,
+          "lineas": [
+            {
+              "texto_referencia": "No quiero dejar que se vean...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "Tus ojos se vean...",
+              "acorde": "F"
+            },
+            {
+              "texto_referencia": "Tan, tan, tan, tristes...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "Habra sido es destino...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "Ese vaso de vino...",
+              "acorde": "F"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "Que dijiste...",
+              "acorde": "G"
+            }
+          ]
+        },
+        {
+          "nombre": "outro",
+          "acordes_bloque": [
+            "G",
+            "F",
+            "C",
+            "G"
+          ],
+          "pattern_reuse": null,
+          "notas": "Cierre con imagen de la cuerda. Misma progresion G-F-C-G.",
+          "lineas": [
+            {
+              "texto_referencia": "Salta la cuerda, se enreda...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "F"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "C"
+            },
+            {
+              "texto_referencia": "Y cae de boca...",
+              "acorde": "G"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "divididos_como_un_cuento",
+      "artista": "Divididos",
+      "titulo": "Como un Cuento",
+      "estado": "pending_review",
+      "tonalidad": "E minor",
+      "capo": null,
+      "bpm_referencia": null,
+      "genero": "rock_argentino",
+      "notas_curaduria": "Versos sobre Em-Am-Em-B7. Estribillo sobre F#m-Bm-D-A con Asus4 de paso. F#m y Asus4 se mantienen exactos segun material. Estribillo tiene cierre sobre Bm-F#m-G.",
+      "fecha_carga": "2026-05-05",
+      "secciones": [
+        {
+          "nombre": "verso_1",
+          "acordes_bloque": [
+            "Em",
+            "Am",
+            "Em",
+            "B7"
+          ],
+          "pattern_reuse": null,
+          "notas": null,
+          "lineas": [
+            {
+              "texto_referencia": "Como un cuento...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "veo la gente caer...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "B7"
+            },
+            {
+              "texto_referencia": "en esa lluvia que lavo ese mar...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "B7"
+            },
+            {
+              "texto_referencia": "Como un cuento...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "de una historia mas...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "B7"
+            },
+            {
+              "texto_referencia": "de almas enamorando el final...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "B7"
+            }
+          ]
+        },
+        {
+          "nombre": "estribillo_1",
+          "acordes_bloque": [
+            "F#m",
+            "Bm",
+            "D",
+            "A",
+            "Asus4",
+            "Bm",
+            "F#m",
+            "G"
+          ],
+          "pattern_reuse": null,
+          "notas": "F#m y Asus4 se mantienen exactos. Asus4 es acorde de paso entre A y siguiente F#m. Cierre Bm-F#m-G.",
+          "lineas": [
+            {
+              "texto_referencia": "Nunca te vi baldear el corazon...",
+              "acorde": "F#m"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Bm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "A"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Asus4"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "A"
+            },
+            {
+              "texto_referencia": "un Chalchalero no es un Rolling Stone...",
+              "acorde": "F#m"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Bm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "A"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Asus4"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "A"
+            },
+            {
+              "texto_referencia": "debe haber un gran error...",
+              "acorde": "Bm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "F#m"
+            },
+            {
+              "texto_referencia": "yo no lo se...",
+              "acorde": "Bm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "F#m"
+            },
+            {
+              "texto_referencia": "debe haber un gran error, siiii...",
+              "acorde": "Bm"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "F#m"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            }
+          ]
+        },
+        {
+          "nombre": "verso_2",
+          "acordes_bloque": [
+            "Em",
+            "Am",
+            "Em",
+            "B7"
+          ],
+          "pattern_reuse": "verso_1",
+          "notas": null,
+          "lineas": [
+            {
+              "texto_referencia": "de secretos...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "y clandestinidad...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "B7"
+            },
+            {
+              "texto_referencia": "doble vida de un ser o no ser...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "B7"
+            },
+            {
+              "texto_referencia": "nunca es el tiempo...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "que va a venir...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "B7"
+            },
+            {
+              "texto_referencia": "y una bala con visa en la paz...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Am"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "Em"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "B7"
+            }
+          ]
+        },
+        {
+          "nombre": "estribillo_2",
+          "acordes_bloque": [
+            "F#m",
+            "Bm",
+            "D",
+            "A",
+            "Asus4",
+            "Bm",
+            "F#m",
+            "G"
+          ],
+          "pattern_reuse": "estribillo_1",
+          "notas": null,
+          "lineas": []
+        },
+        {
+          "nombre": "puente_instrumental",
+          "acordes_bloque": [
+            "Em",
+            "Am",
+            "Em",
+            "B7"
+          ],
+          "pattern_reuse": "verso_1",
+          "notas": "Dos vueltas instrumentales de Em-Am-Em-B7 entre estribillo y verso final.",
+          "lineas": []
+        },
+        {
+          "nombre": "verso_3",
+          "acordes_bloque": [
+            "Em",
+            "Am",
+            "Em",
+            "B7"
+          ],
+          "pattern_reuse": "verso_1",
+          "notas": "Repeticion del verso_1 completo.",
+          "lineas": []
+        },
+        {
+          "nombre": "estribillo_3",
+          "acordes_bloque": [
+            "F#m",
+            "Bm",
+            "D",
+            "A",
+            "Asus4",
+            "Bm",
+            "F#m",
+            "G"
+          ],
+          "pattern_reuse": "estribillo_1",
+          "notas": null,
+          "lineas": []
+        }
+      ]
+    },
+    {
+      "id": "divididos_el_38",
+      "artista": "Divididos",
+      "titulo": "El 38",
+      "estado": "pending_review",
+      "tonalidad": "E major",
+      "capo": null,
+      "bpm_referencia": null,
+      "genero": "rock_argentino",
+      "notas_curaduria": "Versos sobre E-D-G-D. Estribillo sobre G-D con D4 de paso. D4 se mantiene exacto segun material (equivale a Dsus4). Outro instrumental repite intro E-D-G.",
+      "fecha_carga": "2026-05-05",
+      "secciones": [
+        {
+          "nombre": "intro",
+          "acordes_bloque": [
+            "E",
+            "D",
+            "G"
+          ],
+          "pattern_reuse": null,
+          "notas": "Dos vueltas de E-D-G instrumentales.",
+          "lineas": []
+        },
+        {
+          "nombre": "verso_1",
+          "acordes_bloque": [
+            "E",
+            "D",
+            "G",
+            "D"
+          ],
+          "pattern_reuse": null,
+          "notas": null,
+          "lineas": [
+            {
+              "texto_referencia": "El 38 esta cargado...",
+              "acorde": "E"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "le puse balas pero no se hace apretar...",
+              "acorde": "E"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "En el oeste esta el agite...",
+              "acorde": "E"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "el lider manda pero vos, vos te quebras...",
+              "acorde": "E"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            }
+          ]
+        },
+        {
+          "nombre": "estribillo_1",
+          "acordes_bloque": [
+            "G",
+            "D",
+            "D4"
+          ],
+          "pattern_reuse": null,
+          "notas": "D4 es acorde de paso (equivale a Dsus4). Se mantiene exacto segun material.",
+          "lineas": [
+            {
+              "texto_referencia": "Y para que tanto amor...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D4"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "si de chiquito soy asi...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D4"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "Pensa, pensa dice la tele...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D4"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "yo dije si, pero no... pero no tanto...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            }
+          ]
+        },
+        {
+          "nombre": "verso_2",
+          "acordes_bloque": [
+            "E",
+            "D",
+            "G",
+            "D"
+          ],
+          "pattern_reuse": "verso_1",
+          "notas": null,
+          "lineas": [
+            {
+              "texto_referencia": "Boxearon juntos con sus dos hijos...",
+              "acorde": "E"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "mientras la guita se le iba por el divan...",
+              "acorde": "E"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "Caza los brolis, dice la vieja...",
+              "acorde": "E"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "ese tipo por la radio no para de hablar...",
+              "acorde": "E"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            }
+          ]
+        },
+        {
+          "nombre": "estribillo_2",
+          "acordes_bloque": [
+            "G",
+            "D",
+            "D4"
+          ],
+          "pattern_reuse": null,
+          "notas": "Letra diferente al estribillo_1. Misma progresion G-D-D4-D.",
+          "lineas": [
+            {
+              "texto_referencia": "En tu cabeza hay muchas cosas...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D4"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "y la Martita se te fue...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D4"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "vas a los bares y no te alcanza...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D4"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            },
+            {
+              "texto_referencia": "todo te pesa, bancatela...",
+              "acorde": "G"
+            },
+            {
+              "texto_referencia": "...",
+              "acorde": "D"
+            }
+          ]
+        },
+        {
+          "nombre": "outro",
+          "acordes_bloque": [
+            "E",
+            "D",
+            "G"
+          ],
+          "pattern_reuse": "intro",
+          "notas": "Cierre instrumental con titulo El 38. Misma base que intro.",
+          "lineas": []
+        }
+      ]
+    }
+  ]
+}
